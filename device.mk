@@ -124,6 +124,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.suzuhime
+
 # LPM
 PRODUCT_PACKAGES += \
     libsuspend 
