@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl.custom \
     fastbootd
 
+# WLAN
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service-lazy.suzuhime
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
