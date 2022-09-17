@@ -307,6 +307,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6762.rc \
     init.recovery.mt6765.rc \
     init.recovery.samsung.rc \
+    init.target.rc \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi
