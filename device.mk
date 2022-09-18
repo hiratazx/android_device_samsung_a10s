@@ -317,7 +317,8 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 PRODUCT_PACKAGES += \
     libshim_audio \
     libshim_beanpod \
-    libshim_showlogo
+    libshim_showlogo \
+    libshim_vtservice
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
