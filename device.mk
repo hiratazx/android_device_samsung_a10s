@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic \
     android.hardware.usb@1.0.vendor
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
+
 # LPM
 PRODUCT_PACKAGES += \
     libsuspend 
