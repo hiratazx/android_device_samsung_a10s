@@ -125,6 +125,15 @@ PRODUCT_PACKAGES += \
     libutils-v30 \
     libutils-v32
 
+# Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc) \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0.vendor \
@@ -312,6 +321,10 @@ PRODUCT_PACKAGES += \
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/public.libraries.vendor.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# Seccomp
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/seccomp/,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
 
 # [HACK] AOSP Recovery touch blobs (ramdisk)
 PRODUCT_COPY_FILES += \
