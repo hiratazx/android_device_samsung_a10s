@@ -7,7 +7,7 @@
 DEVICE_PATH := device/samsung/a10s
 
 #Assert
-TARGET_OTA_ASSERT_DEVICE := a10s
+TARGET_OTA_ASSERT_DEVICE := a10s,a10sxx,suzuhime,seraphine
 
 # Build
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
