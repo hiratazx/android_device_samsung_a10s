@@ -10,6 +10,31 @@ DEVICE_PATH := device/samsung/a10s
 PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
+    android.hardware.audio.common-util.vendor \
+    android.hardware.audio.common@5.0 \
+    android.hardware.audio.common@6.0 \
+    android.hardware.audio.common@6.0-util.vendor \
+    android.hardware.audio.effect@6.0-util.vendor \
+    android.hardware.audio.effect@6.0 \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@6.0 \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio@6.0-util.vendor \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio@2.0 \
+    android.hardware.bluetooth.audio@2.1 \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    audio_policy.stub \
+    libtinycompress \
+    libtinyxml \
+    libaudiofoundation \
+    libaudiofoundation.vendor
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.sysbta.default \
