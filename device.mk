@@ -104,5 +104,12 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
+# [HACK] AOSP Recovery touch blobs (ramdisk)
+PRODUCT_COPY_FILES += \
+    vendor/samsung/a10s/proprietary/vendor/firmware/Himax_firmware.bin:recovery/root/vendor/firmware/Himax_firmware.bin \
+    vendor/samsung/a10s/proprietary/vendor/firmware/chipone-tddi.bin:recovery/root/vendor/firmware/chipone-tddi.bin \
+    vendor/samsung/a10s/proprietary/vendor/firmware/mp_ili9882n_boe.ini:recovery/root/vendor/firmware/mp_ili9882n_boe.ini \
+    vendor/samsung/a10s/proprietary/vendor/firmware/mp_ls_ili9882n_boe.ini:recovery/root/vendor/firmware/mp_ls_ili9882n_boe.ini \
+
 # Inherit the proprietary files
 # $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
