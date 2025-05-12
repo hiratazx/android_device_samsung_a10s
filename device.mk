@@ -349,4 +349,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a10s/proprietary/vendor/firmware/mp_ls_ili9882n_boe.ini:recovery/root/vendor/firmware/mp_ls_ili9882n_boe.ini \
 
 # Inherit the proprietary files
-# $(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
+$(call inherit-product, vendor/samsung/a10s/a10s-vendor.mk)
+
+# Call proprietary lpm setup
+$(call inherit-product, vendor/samsung/lpm/lpm-a10s.mk)

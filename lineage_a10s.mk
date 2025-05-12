@@ -17,9 +17,6 @@ $(call inherit-product, device/samsung/a10s/device.mk)
 # Inherit from product_launched_with_p
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Call proprietary lpm setup
-$(call inherit-product, vendor/samsung/lpm/lpm-a10s.mk)
-
 PRODUCT_DEVICE := a10s
 PRODUCT_NAME := lineage_a10s
 PRODUCT_BRAND := samsung
