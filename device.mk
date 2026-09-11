@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.supplicant@1.1.vendor \
     android.hardware.wifi.supplicant@1.2.vendor \
     android.hardware.wifi.supplicant@1.3.vendor \
-    android.hardware.wifi@1.0.vendor:32 \
+    android.hardware.wifi@1.0.vendor \
     android.system.wifi.keystore@1.0.vendor \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl
@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek:32 \
+    android.hardware.power-service-mediatek \
     android.hardware.power-V1-ndk.vendor \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
@@ -191,8 +191,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1-resources \
     android.hardware.graphics.composer@2.1-resources.vendor \
-    android.hardware.graphics.common-V2-ndk.vendor:32 \
-    android.hardware.graphics.common-V2-ndk_platform.vendor:32 \
+    android.hardware.graphics.common-V2-ndk.vendor \
+    android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl
 
