@@ -177,4 +177,4 @@ BOARD_VNDK_VERSION := current
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Inherit the proprietary files
-# include vendor/samsung/a10s/BoardConfigVendor.mk
+-include vendor/samsung/a10s/BoardConfigVendor.mk
